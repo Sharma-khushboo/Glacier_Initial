@@ -1,0 +1,38 @@
+footer {
+    width:100%;
+    background-color: $primary-color;
+    padding-block: 5rem;
+    text-align: center;
+    color:white;
+    .inner {
+     @include flex-box();
+  
+      .logo{
+        width:50%;
+        text-align: right;
+        padding-right: 1rem;
+        img{
+          width: 100px;
+          display: inline-block;
+          
+        }
+      }
+  
+      .logo-text{
+        width:50%;
+        text-align:left ;
+        padding-left: 1rem;
+        padding-top: 1rem;
+      }
+   
+    }
+    .copyright {
+      padding-top: 2rem;
+      span{
+        color: $fourth-color;
+      }
+    }
+  }
+  
+  
+  

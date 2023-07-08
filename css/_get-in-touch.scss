@@ -1,0 +1,89 @@
+.get-in-touch{
+    text-align: center;
+    padding-top: 5rem;
+    background-color: #fafafa;
+    
+    h3 {
+      color:$primary-color;
+      font-size:2rem;
+      font-weight: 300;
+      margin-bottom: 2rem;
+    }
+    hr{
+      width:10%;
+      border:1px solid black;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+  
+    }
+    p{
+      width: 100%;
+      padding:0 3%;
+      margin:0 auto;
+      letter-spacing: 2px;
+      font-weight: 400;
+      margin-bottom: 2rem;
+      line-height: 2rem;
+    }
+    .inner{
+      @include flex-box();
+      
+      .address{
+        width:40%;
+        background-color: #e3e1e1;
+        padding-block: 4rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        text-align: left;
+        h4 {
+          font-weight: bolder;
+          font-size:1.5rem ;
+          margin-bottom: 2rem;
+        }
+        p {
+          padding-left: 0;
+        }
+        span {
+          font-size: 1.2rem;
+          padding-right: 1rem;
+        }
+      }
+      
+      .form{
+        width:60%;
+        background-color: #aaaaaa;
+        padding-block: 3rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-align: left;
+      }
+
+      input {
+        background-color: #aaaaaa;
+        border:none;
+        border-bottom: 1px solid #222222;
+        &::placeholder{
+          color:#222222;
+        }
+        width:45%;
+        padding:1rem;
+        margin-bottom: 4rem;
+      }
+      #name {
+        margin-right: 3rem;
+      }
+      #message{
+        width:100%;
+      }
+      button{
+        padding:.7rem 2rem;
+        font-family:'Roboto', sans-serif;
+        background:0;
+        border:2px solid #222222;
+        float: right;
+        color:#222222;
+      }
+    }
+  
+  }
+  // get in touch ends here.....

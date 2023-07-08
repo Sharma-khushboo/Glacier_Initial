@@ -1,0 +1,89 @@
+body {
+  width:100%;
+  height:100%;
+  margin: 0;
+  padding:0;
+  font-size: 14px;
+}
+@font-face {
+  font-family: myfont;
+  src: url(../fonts/);
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  // border:2px solid red;
+
+}
+
+$primary-color: #222222;
+//$secondary-color: #bb4343;
+// $third-color: #efab4b;
+$fourth-color:#d87843;
+$white : #ffffff;
+@mixin second-font {
+  font-family: 'Lato', sans-serif;
+}
+
+.inner {
+  max-width:1140px; 
+  width:100%;
+  margin:0 auto;
+}
+
+.button {
+  background: none;
+  border: 2px solid $white;
+  color:white;
+  font-family:'Roboto', sans-serif; 
+  padding: 1rem 3rem ;
+
+}
+
+@mixin flex-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@import "header";
+
+
+//Introduction starts
+@import "introduction-section";
+//Introduction ends
+
+// why choose section starts here
+@import "why-choose";
+
+
+//quality design
+@import "quality-design";
+
+//projects starts here 
+@import "project";
+// clients section starts here....
+
+@import "client";
+// get in touch starts here.....
+@import "get-in-touch";
+
+//footer starts here.....
+@import "footer";
+
+.button:hover {
+  background-color:white;
+  color:#222222;
+  border-color: #222222;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+
+  
+  
+  
+

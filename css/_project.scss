@@ -1,0 +1,40 @@
+.projects-section {
+    padding-block: 5rem;
+    background-color: #fafafa;
+    h3{
+      text-align: center;
+      margin-bottom: 4rem;
+      font-size:2rem;
+      font-weight: 300;
+    }
+    .inner {
+     
+      @include flex-box();
+      padding:0 2%;
+      .left{
+        width:49%;
+        margin-top: 0.7rem;
+  
+      }
+      .right{
+        width:49%;
+        margin-top: 1rem;
+      }
+      
+      .project {
+        width:100%;
+        margin-top: 1rem;
+        img{
+          width:100%;
+          border-radius: 1rem;
+        }   
+    }
+  
+      
+    }
+  }
+  
+  
+  
+  // projects ends here
+  

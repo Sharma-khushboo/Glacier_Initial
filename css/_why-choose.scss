@@ -1,0 +1,68 @@
+.why-choose-section{
+    text-align: center;
+    padding-block:5rem;
+    color:$white;
+   
+    h3 {
+      color:$primary-color;
+      font-size:2rem;
+      font-weight: 300;
+      margin-bottom: 2rem;
+    }
+    
+    .inner {
+      @include flex-box();
+      padding:0 2%;
+    }
+  
+    .box {
+      width:30%;
+      background-color:$primary-color;
+      margin-top: 2rem;
+      padding:1rem;
+      padding-block: 3rem;
+      border-radius: 1rem;
+  
+      h3{
+        color: $white;
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+        text-align:left;
+      }
+  
+      p{
+        text-align:left;
+      }
+    }
+    
+    
+  }
+  
+  .box1 {
+    background-image: linear-gradient(to right, rgba(99, 99, 99, 0.4), rgba(5, 5, 5, 0.8)), url("../img/bakery-01.JPG");
+    background-size: cover;
+  }
+  
+  .box2 {
+    background-image: linear-gradient(to right, rgba(99, 99, 99, 0.4), rgba(5, 5, 5, 0.8)), url("../img/bakery-02.png");
+    background-size: cover;
+  }
+  
+  .box3 {
+    background-image: linear-gradient(to right, rgba(99, 99, 99, 0.4), rgba(5, 5, 5, 0.8)), url("../img/bakery-03.jpg");
+    background-size: cover;
+  }
+  .box4 {
+    background-image: linear-gradient(to right, rgba(99, 99, 99, 0.4), rgba(5, 5, 5, 0.8)), url("../img/customer-support.png");
+    background-size: cover;
+  }
+  .box5 {
+    background-image: linear-gradient(to right, rgba(99, 99, 99, 0.4), rgba(5, 5, 5, 0.8)), url("../img/bakery-05.jpg");
+    background-size: cover;
+  }
+  .box6 {
+    background-image: linear-gradient(to right, rgba(99, 99, 99, 0.4), rgba(5, 5, 5, 0.8)), url("../img/bakery-06.jpg");
+    background-size: cover;
+  }
+  
+  // why choose section ends here

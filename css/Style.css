@@ -1,0 +1,520 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+@font-face {
+  font-family: myfont;
+  src: url(../fonts/);
+}
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.inner {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.button {
+  background: none;
+  border: 2px solid #ffffff;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  padding: 1rem 3rem;
+}
+
+header {
+  height: 100vh;
+  position: relative;
+}
+header .owl-carousel {
+  width: 100%;
+  height: 100vh;
+}
+header .owl-carousel .slide {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+header .slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to right, rgba(187, 67, 67, 0.3), rgba(239, 171, 75, 0.3));
+}
+header .slide-1 {
+  background-image: url("../img/Front Screen Photo,Display Counter2.png");
+}
+header .slide-2 {
+  background-image: url("../img/bakery-03.jpg");
+}
+header .slide-3 {
+  background-image: url("../img/project-3.JPG");
+}
+header .headings {
+  margin: 0 auto;
+  color: #ffffff;
+  padding: 0 20%;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+}
+header .headings h1 {
+  font-weight: 800;
+  letter-spacing: 2px;
+  padding-block: 1.5rem;
+}
+header .headings p {
+  letter-spacing: 2px;
+  font-weight: 300;
+  padding-block: 1.5rem;
+  line-height: 2rem;
+  font-family: "Lato", sans-serif;
+}
+header .headings button {
+  margin: 0 auto;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+nav .logo {
+  font-size: 1.3rem;
+  font-weight: bolder;
+  font-family: myfont;
+}
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+}
+nav li {
+  padding-right: 2rem;
+  border-bottom: 2px solid transparent;
+}
+
+.icon {
+  color: white !important;
+  font-size: 24px !important;
+  cursor: pointer !important;
+  display: none;
+  margin-right: 2rem;
+}
+
+.cross {
+  display: none;
+}
+
+li a:hover {
+  color: #222222;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 1rem 2rem;
+  font-weight: bold;
+  border-bottom: 2px solid #222222;
+}
+
+.owl-dots {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 1%;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  background-color: #ffffff;
+  width: 1rem;
+  height: 1rem;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+  background-color: #d87843 !important;
+}
+
+.owl-nav button {
+  border: none !important;
+  outline: none !important;
+}
+
+.owl-prev, .owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 4rem !important;
+  color: #ffffff !important;
+  font-weight: bolder !important;
+  background-color: none !important;
+}
+
+.owl-prev {
+  left: 1%;
+}
+
+.owl-next {
+  right: 1%;
+}
+
+@media only screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+    position: absolute;
+    width: 100%;
+    padding-block: 10rem;
+    margin-top: 0;
+    background-color: #222222;
+    font-size: 2rem;
+    flex-direction: column;
+  }
+  nav ul li {
+    padding: 1rem;
+    text-align: center;
+  }
+  nav .logo {
+    margin-left: 3rem;
+  }
+  nav .icon {
+    display: block;
+  }
+  nav .cross {
+    display: none;
+    z-index: 20;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 1.2rem;
+  }
+  header .headings {
+    padding: 0 15%;
+  }
+  .why-choose-section .inner .box {
+    width: 49%;
+  }
+  .get-in-touch .inner .address, .get-in-touch .inner .form {
+    max-width: 768px;
+    width: 100% !important;
+    text-align: center !important;
+  }
+  .get-in-touch .inner .form button {
+    float: none;
+  }
+  .introduction p {
+    padding: 0 3%;
+  }
+  .get-in-touch .inner input {
+    width: 100% !important;
+  }
+  li a:hover {
+    color: #d87843;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    padding: 1rem 2rem;
+    font-weight: bold;
+    border-bottom: 2px solid #d87843;
+  }
+}
+.introduction {
+  text-align: center;
+  background-color: #fafafa;
+  padding-block: 5rem;
+  color: #222222;
+}
+.introduction h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.introduction p {
+  letter-spacing: 2px;
+  font-weight: 400;
+  padding-block: 1.5rem;
+  line-height: 2rem;
+}
+.introduction button {
+  color: #222222;
+  border: 2px solid #222222;
+}
+
+.why-choose-section {
+  text-align: center;
+  padding-block: 5rem;
+  color: #ffffff;
+}
+.why-choose-section h3 {
+  color: #222222;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+.why-choose-section .inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 2%;
+}
+.why-choose-section .box {
+  width: 30%;
+  background-color: #222222;
+  margin-top: 2rem;
+  padding: 1rem;
+  padding-block: 3rem;
+  border-radius: 1rem;
+}
+.why-choose-section .box h3 {
+  color: #ffffff;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  text-align: left;
+}
+.why-choose-section .box p {
+  text-align: left;
+}
+
+.box1 {
+  background-image: linear-gradient(to right, rgba(99, 99, 99, 0.4), rgba(5, 5, 5, 0.8)), url("../img/bakery-01.JPG");
+  background-size: cover;
+}
+
+.box2 {
+  background-image: linear-gradient(to right, rgba(99, 99, 99, 0.4), rgba(5, 5, 5, 0.8)), url("../img/bakery-02.png");
+  background-size: cover;
+}
+
+.box3 {
+  background-image: linear-gradient(to right, rgba(99, 99, 99, 0.4), rgba(5, 5, 5, 0.8)), url("../img/bakery-03.jpg");
+  background-size: cover;
+}
+
+.box4 {
+  background-image: linear-gradient(to right, rgba(99, 99, 99, 0.4), rgba(5, 5, 5, 0.8)), url("../img/customer-support.png");
+  background-size: cover;
+}
+
+.box5 {
+  background-image: linear-gradient(to right, rgba(99, 99, 99, 0.4), rgba(5, 5, 5, 0.8)), url("../img/bakery-05.jpg");
+  background-size: cover;
+}
+
+.box6 {
+  background-image: linear-gradient(to right, rgba(99, 99, 99, 0.4), rgba(5, 5, 5, 0.8)), url("../img/bakery-06.jpg");
+  background-size: cover;
+}
+
+.quality-design {
+  text-align: center;
+  width: 100%;
+  height: 300px;
+  background-image: linear-gradient(to right, rgba(99, 99, 99, 0.4), rgba(5, 5, 5, 0.4)), url("../img/A DC4.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.quality-design button {
+  margin: 0 auto;
+  margin-top: 125px;
+}
+
+.projects-section {
+  padding-block: 5rem;
+  background-color: #fafafa;
+}
+.projects-section h3 {
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 2rem;
+  font-weight: 300;
+}
+.projects-section .inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 2%;
+}
+.projects-section .inner .left {
+  width: 49%;
+  margin-top: 0.7rem;
+}
+.projects-section .inner .right {
+  width: 49%;
+  margin-top: 1rem;
+}
+.projects-section .inner .project {
+  width: 100%;
+  margin-top: 1rem;
+}
+.projects-section .inner .project img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.our-clients {
+  text-align: center;
+  padding-block: 5rem;
+  background-color: #dedede;
+}
+.our-clients h3 {
+  color: #222222;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+.our-clients hr {
+  width: 10%;
+  border: 1px solid black;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+.get-in-touch {
+  text-align: center;
+  padding-top: 5rem;
+  background-color: #fafafa;
+}
+.get-in-touch h3 {
+  color: #222222;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+.get-in-touch hr {
+  width: 10%;
+  border: 1px solid black;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+.get-in-touch p {
+  width: 100%;
+  padding: 0 3%;
+  margin: 0 auto;
+  letter-spacing: 2px;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  line-height: 2rem;
+}
+.get-in-touch .inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.get-in-touch .inner .address {
+  width: 40%;
+  background-color: #e3e1e1;
+  padding-block: 4rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  text-align: left;
+}
+.get-in-touch .inner .address h4 {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.get-in-touch .inner .address p {
+  padding-left: 0;
+}
+.get-in-touch .inner .address span {
+  font-size: 1.2rem;
+  padding-right: 1rem;
+}
+.get-in-touch .inner .form {
+  width: 60%;
+  background-color: #aaaaaa;
+  padding-block: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: left;
+}
+.get-in-touch .inner input {
+  background-color: #aaaaaa;
+  border: none;
+  border-bottom: 1px solid #222222;
+  width: 45%;
+  padding: 1rem;
+  margin-bottom: 4rem;
+}
+.get-in-touch .inner input::-moz-placeholder {
+  color: #222222;
+}
+.get-in-touch .inner input::placeholder {
+  color: #222222;
+}
+.get-in-touch .inner #name {
+  margin-right: 3rem;
+}
+.get-in-touch .inner #message {
+  width: 100%;
+}
+.get-in-touch .inner button {
+  padding: 0.7rem 2rem;
+  font-family: "Roboto", sans-serif;
+  background: 0;
+  border: 2px solid #222222;
+  float: right;
+  color: #222222;
+}
+
+footer {
+  width: 100%;
+  background-color: #222222;
+  padding-block: 5rem;
+  text-align: center;
+  color: white;
+}
+footer .inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .inner .logo {
+  width: 50%;
+  text-align: right;
+  padding-right: 1rem;
+}
+footer .inner .logo img {
+  width: 100px;
+  display: inline-block;
+}
+footer .inner .logo-text {
+  width: 50%;
+  text-align: left;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+footer .copyright {
+  padding-top: 2rem;
+}
+footer .copyright span {
+  color: #d87843;
+}
+
+.button:hover {
+  background-color: white;
+  color: #222222;
+  border-color: #222222;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}/*# sourceMappingURL=style.css.map */
